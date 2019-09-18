@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrackActivity"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTrack"
+            android:hint="Masukkan Nama Track"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+        <SeekBar
+            android:id="@+id/seekBarRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"/>
+        <Button
+            android:id="@+id/btnSimpanTrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_margin="10dp"
+            android:text="Save"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTrack"
+            android:padding="16dp"
+            android:text="Tracks"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_below="@id/insert">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewTrack"/>
+    </RelativeLayout>
+
+</RelativeLayout>

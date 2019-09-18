@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Firebase Example</string>
+
+    <array name="Konten">
+        <item>Girl Crush</item>
+        <item>Ballad</item>
+        <item>Fairy</item>
+        <item>Passionate</item>
+    </array>
+</resources>
